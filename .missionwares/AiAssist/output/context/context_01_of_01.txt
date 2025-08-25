@@ -1,0 +1,152 @@
+filepath: /Users/gregpaskal/GoogleDrive/Documents/Creative/BrandKit/BrandKit-mAi-MissionWares/.missionwares/AiAssist/output/context/context_01_of_01.txt
+Context generated on: August 25, 2025, 6:57:34 AM
+
+=================================================================================
+AI ASSIST CONTEXT REPORT
+This file consolidates all relevant code, documentation, and training data for the project.
+The content is organized by file, with each section clearly marked.
+
+Primary Directives for AI Assistant:
+1. Review the content of each file section.
+2. Provide a summary of the file's purpose and key points.
+3. Highlight any potential issues or areas for improvement based on the training data provided.
+4. Note the total number of lines reviewed for each file.
+
+File Section Structure:
+- Each section starts with a header indicating filename, line_count and file_size.
+- The content of the file follows the header.
+
+Example Section Header:
+=================================================================================
+Content from file: <filename> follows for next <line_count> lines (file_size).
+---------------------------------------------------------------------------------
+
+=================================================================================
+CONTEXT VALIDATION - START
+=================================================================================
+Context ID: AIASSIST-20250825-065734-2314A8
+Context Files: 1 file (context_01_of_01.txt)
+Total Files Included: 7 files
+Total Content Lines: 1 lines
+File Types: html (3), md (4)
+Processing Timestamp: August 25, 2025, 6:57:34 AM
+
+Master Content Checksum: SHA256-515762ba180a2947...
+
+Files to be processed:
+1. Universal Training Files: 0 files
+2. Project Training Files: 0 files
+3. Project Source Files: 7 files
+
+AI Processing Instructions:
+- Verify final validation block shows matching statistics
+- Confirm Master Content Checksum matches in closing block
+=================================================================================
+
+
+=================================================================================
+PROJECT TREE
+=================================================================================
+
+.
+├── LIVE-PREVIEW
+│   ├── current-colors.html
+│   ├── current-typography.html
+│   └── index.html
+├── mAi-METHODOLOGY
+│   ├── creative-liberation-principles.md
+│   ├── expression-opportunity-capture.md
+│   └── methodology-discoveries.md
+└── README.md
+
+3 directories, 7 files
+
+=================================================================================
+
+=================================================================================
+CONTEXT MANIFEST - OVERVIEW
+=================================================================================
+Universal Training Files: 0
+Project-Specific Training Files: 0
+Project Source Files: 7
+Project Source Files (by type):
+  - html: 3
+  - md: 4
+---------------------------------------------------------------------------------
+Total Files for Review: 7
+Total Lines for Review: 1
+=================================================================================
+
+=========================================================================================================================================
+CONTEXT MANIFEST - FILE DETAILS
+=========================================================================================================================================
+Context File              | Filename                                                     | Version    | Lines | Last Updated        
+-----------------------------------------------------------------------------------------------------------------------------------------
+context_01_of_01.txt      | current-colors.html                                          | N/A        | 0     | 2025-08-25 6:49AM   
+context_01_of_01.txt      | current-typography.html                                      | N/A        | 0     | 2025-08-25 6:50AM   
+context_01_of_01.txt      | index.html                                                   | N/A        | 0     | 2025-08-25 6:49AM   
+context_01_of_01.txt      | creative-liberation-principles.md                            | N/A        | 0     | 2025-08-25 6:51AM   
+context_01_of_01.txt      | expression-opportunity-capture.md                            | N/A        | 0     | 2025-08-25 6:52AM   
+context_01_of_01.txt      | methodology-discoveries.md                                   | N/A        | 0     | 2025-08-25 6:52AM   
+context_01_of_01.txt      | README.md                                                    | N/A        | 1     | 2025-08-25 6:44AM   
+=========================================================================================================================================
+
+=================================================================================
+Content from file: "current-colors.html" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "current-typography.html" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "index.html" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "creative-liberation-principles.md" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "expression-opportunity-capture.md" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "methodology-discoveries.md" follows for next 0 lines (size: 0.0 B).
+---------------------------------------------------------------------------------
+
+
+=================================================================================
+Content from file: "README.md" follows for next 1 lines (size: 27.0 B).
+---------------------------------------------------------------------------------
+# BrandKit-mAi-MissionWares
+
+
+=================================================================================
+CONTEXT VALIDATION - COMPLETE
+=================================================================================
+Context ID: AIASSIST-20250825-065734-2314A8 ✓ (matches opening)
+
+Processing Summary:
+✓ Universal Training Files: 0 files processed
+✓ Project Training Files: 0 files processed
+✓ Project Source Files: 7 files processed
+✓ Total Content Lines: 1 lines processed
+✓ All files successfully included: August 25, 2025, 6:57:34 AM
+
+Master Content Checksum: SHA256-515762ba180a2947... ✓ (verify matches opening)
+Generation Complete: August 25, 2025, 6:57:34 AM
+
+AI Validation Protocol:
+□ Master checksum verified (content integrity confirmed)
+□ All training directives reviewed and applied
+□ All project files analyzed for patterns and issues
+□ Architecture and code quality assessed
+
+Status: CONTEXT_COMPLETE - All content validated and ready for analysis
+=================================================================================

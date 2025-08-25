@@ -1,0 +1,63 @@
+# ===============================================================
+# @title mAi - MissionWares BrandKit Configuration
+# @file aiassist_config.yaml
+# @version 1.0.0
+# @updated 2025-08-25 06:00:00 AM CDT
+# @author Greg Paskal
+# @company MissionWares
+#
+# @description
+# Configuration for the MissionWares BrandKit.
+# Defines output directories, ignore patterns, and generation
+# settings for tree visualization, path listing, and context
+# file creation. This is the active configuration file used
+# by all AI Assist scripts in the framework.
+#
+# @sections
+# - Common Settings - Output directory and auto-clear options
+# - generate_tree - Project tree visualization configuration
+# - generate_paths - File path listing configuration
+# - generate_context - Context file generation configuration
+#
+# @dependencies
+# - yq (YAML processor for reading values)
+# - AI Assist script suite
+#
+# @tags mAi, configuration, settings, ai-assist, active-config
+#
+# @changeLog
+# Date        Author          Version  Description
+# ----------  --------------  -------  --------------------------
+# 2025-08-25  G. Paskal       1.0.0    Initial configuration
+# ===============================================================
+
+# Common output directory
+common_output_directory: ".missionwares/AiAssist/output"
+auto_clear_output_on_capture: true
+
+# Configuration for generate_tree.sh
+generate_tree:
+  output_file: "tree.txt"
+  ignore_patterns: ".ai_assist|.missionwares|.private|target|extensions|.git|.gitignore|.vscode|.allure|*.gif|*.jpg|*.jpeg|*.png|*.svg|*.afdesign|*.ttf|*.wav|*.zip|*.mmdb|allure-report|allure-results|.sftpignore|.DS_Store|SampleData|output|training_disabled"
+  output_locations:
+    - path: "${common_output_directory}/tree"
+      save_timestamped_version: false
+
+# Configuration for generate_paths.sh
+generate_paths:
+  output_file: "paths.txt"
+  # 'SampleData' has been removed to include Swift files for this experiment
+  # File extensions are now correctly formatted with wildcards (*.)
+  ignore_patterns: ".ai_assist|.missionwares|.private|target|extensions|.git|.gitignore|.vscode|.allure|*.gif|*.jpg|*.jpeg|*.png|*.svg|*.afdesign|*.ttf|*.wav|*.zip|*.mmdb|allure-report|allure-results|.sftpignore|.DS_Store|SampleData|output|training_disabled"
+  exclude_directories: true
+  output_locations:
+    - path: "${common_output_directory}/paths"
+      save_timestamped_version: false
+
+# Configuration for generate_context.sh
+generate_context:
+  output_file: "context.txt"
+  maximum_line_length: 7000
+  output_locations:
+    - path: "${common_output_directory}/context"
+      save_timestamped_version: false

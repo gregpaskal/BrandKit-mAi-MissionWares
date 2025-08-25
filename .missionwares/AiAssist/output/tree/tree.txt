@@ -1,0 +1,20 @@
+// filepath: /Users/gregpaskal/GoogleDrive/Documents/Creative/BrandKit/BrandKit-mAi-MissionWares/.missionwares/AiAssist/output/tree/tree.txt
+Tree generated on: August 25, 2025, 6:57:34 AM
+=================================================================================
+This file contains the project tree structure.
+=================================================================================
+
+BEGIN_TREE_CONTENT
+
+.
+├── LIVE-PREVIEW
+│   ├── current-colors.html
+│   ├── current-typography.html
+│   └── index.html
+├── mAi-METHODOLOGY
+│   ├── creative-liberation-principles.md
+│   ├── expression-opportunity-capture.md
+│   └── methodology-discoveries.md
+└── README.md
+
+3 directories, 7 files
