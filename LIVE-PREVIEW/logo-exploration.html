@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MissionWares Logo Territory - Brand Laboratory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .logo-concept {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-concept:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.1);
+        }
+        
+        .concept-header {
+            background: #f8f9fa;
+            padding: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .concept-name {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .concept-personality {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9em;
+            color: #718096;
+            font-style: italic;
+        }
+        
+        .logo-display {
+            padding: 50px;
+            text-align: center;
+            background: #fafafa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+        
+        .logo-mark {
+            margin-bottom: 20px;
+        }
+        
+        .logo-text {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 2.5em;
+            font-weight: 400;
+            color: #1B4B73;
+            letter-spacing: -0.02em;
+        }
+        
+        /* Concept 1: Compass Navigation */
+        .compass-mark {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            margin: 0 auto 15px;
+        }
+        
+        .compass-circle {
+            width: 60px;
+            height: 60px;
+            border: 3px solid #1B4B73;
+            border-radius: 50%;
+            position: relative;
+            background: linear-gradient(45deg, #1B4B73 0%, #059669 100%);
+        }
+        
+        .compass-needle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 25px;
+            background: white;
+            transform: translate(-50%, -50%);
+            transform-origin: center bottom;
+        }
+        
+        .compass-needle::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -4px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 12px solid #f59e0b;
+        }
+        
+        /* Concept 2: Interconnected Nodes */
+        .nodes-mark {
+            width: 80px;
+            height: 60px;
+            position: relative;
+            margin: 0 auto 15px;
+        }
+        
+        .node {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #059669;
+        }
+        
+        .node:nth-child(1) { top: 0; left: 15px; background: #1B4B73; }
+        .node:nth-child(2) { top: 15px; right: 0; background: #059669; }
+        .node:nth-child(3) { bottom: 0; left: 0; background: #7c3aed; }
+        .node:nth-child(4) { bottom: 15px; right: 20px; background: #f59e0b; }
+        
+        .connection {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, #1B4B73 0%, #059669 100%);
+        }
+        
+        .connection:nth-child(5) {
+            top: 7px;
+            left: 25px;
+            width: 35px;
+            transform: rotate(25deg);
+        }
+        
+        .connection:nth-child(6) {
+            top: 30px;
+            left: 15px;
+            width: 45px;
+            transform: rotate(-35deg);
+        }
+        
+        /* Concept 3: Arrow Path */
+        .arrow-mark {
+            width: 70px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto 15px;
+        }
+        
+        .arrow-path {
+            position: absolute;
+            width: 70px;
+            height: 30px;
+            border: 3px solid #1B4B73;
+            border-right: none;
+            border-radius: 15px 0 0 15px;
+            top: 10px;
+        }
+        
+        .arrow-head {
+            position: absolute;
+            right: -3px;
+            top: 17px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid #059669;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+        
+        .concept-details {
+            padding: 25px;
+            background: white;
+        }
+        
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .detail-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .detail-item h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+        
+        .detail-item p {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9em;
+            color: #718096;
+            font-weight: 400;
+        }
+        
+        .nav-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #4299e1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+            z-index: 1000;
+        }
+        
+        .nav-back:hover {
+            background: #3182ce;
+        }
+        
+        .methodology-status {
+            background: #edf2f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 4px solid #4299e1;
+        }
+        
+        .methodology-status h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .verification-steps {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .verification-steps h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            color: #22543d;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .verification-steps ol {
+            font-family: 'Source Sans 3', sans-serif;
+            color: #2f855a;
+            padding-left: 20px;
+        }
+        
+        .verification-codes {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 700;
+            color: #2563eb;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-back">← Back to Brand Lab</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Logo Territory</h1>
+            <p>Visual Marks for Mission-Enabling Innovation</p>
+        </div>
+        
+        <div class="content">
+            
+            <!-- Concept 1: Mission Compass -->
+            <div class="logo-concept">
+                <div class="concept-header">
+                    <div class="concept-name">Concept 1: Mission Compass</div>
+                    <div class="concept-personality">Direction • Purpose • Navigation</div>
+                </div>
+                <div class="logo-display">
+                    <div class="logo-mark">
+                        <div class="compass-mark">
+                            <div class="compass-circle">
+                                <div class="compass-needle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-text">MissionWares</div>
+                </div>
+                <div class="concept-details">
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <h4>Symbolism</h4>
+                            <p>Compass represents guidance toward life purpose and mission direction</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Colors</h4>
+                            <p>Primary blue circle with growth green gradient, energy amber needle</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Personality</h4>
+                            <p>Trustworthy guidance, clear direction, purposeful navigation</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Applications</h4>
+                            <p>Strong recognition as app icon, scales well, works in monochrome</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Concept 2: Connected Growth -->
+            <div class="logo-concept">
+                <div class="concept-header">
+                    <div class="concept-name">Concept 2: Connected Growth</div>
+                    <div class="concept-personality">Collaboration • Network • Innovation</div>
+                </div>
+                <div class="logo-display">
+                    <div class="logo-mark">
+                        <div class="nodes-mark">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="connection"></div>
+                            <div class="connection"></div>
+                        </div>
+                    </div>
+                    <div class="logo-text">MissionWares</div>
+                </div>
+                <div class="concept-details">
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <h4>Symbolism</h4>
+                            <p>Interconnected nodes representing collaborative mission enablement</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Colors</h4>
+                            <p>Four brand colors as nodes with gradient connections</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Personality</h4>
+                            <p>Collaborative innovation, networked growth, connected purpose</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Applications</h4>
+                            <p>Flexible animation potential, represents AI collaboration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Concept 3: Forward Path -->
+            <div class="logo-concept">
+                <div class="concept-header">
+                    <div class="concept-name">Concept 3: Forward Path</div>
+                    <div class="concept-personality">Progress • Journey • Achievement</div>
+                </div>
+                <div class="logo-display">
+                    <div class="logo-mark">
+                        <div class="arrow-mark">
+                            <div class="arrow-path"></div>
+                            <div class="arrow-head"></div>
+                        </div>
+                    </div>
+                    <div class="logo-text">MissionWares</div>
+                </div>
+                <div class="concept-details">
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <h4>Symbolism</h4>
+                            <p>Curved path leading forward, representing mission journey</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Colors</h4>
+                            <p>Primary blue path with growth green arrow head</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Personality</h4>
+                            <p>Forward momentum, purposeful journey, achievement-oriented</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Applications</h4>
+                            <p>Dynamic animation potential, clear directionality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="methodology-status">
+                <h3>mAi Methodology Status - Logo Territory</h3>
+                <p><strong>Current Exploration:</strong> Three logo concepts integrating Source Sans 3 typography</p>
+                <p><strong>Hypothesis:</strong> Geometric but warm symbols that embody mission-enabling innovation</p>
+                <p><strong>Design Philosophy:</strong> Friendly technical excellence with purposeful symbolism</p>
+                <p><strong>Last Updated:</strong> August 25, 2025 4:00 PM CDT</p>
+                
+                <div class="verification-steps">
+                    <h4>Verification Steps</h4>
+                    <ol>
+                        <li>View each logo concept in context with Source Sans 3 typography</li>
+                        <li>Assess which concept best represents MissionWares mission-enabling philosophy</li>
+                        <li>Consider scalability and application across different contexts</li>
+                        <li>Evaluate color integration with established brand palette</li>
+                        <li>Test visual hierarchy and legibility at different sizes</li>
+                    </ol>
+                    <div class="verification-codes"><strong>(p, pc, f, b, s, c, x, v, g)</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

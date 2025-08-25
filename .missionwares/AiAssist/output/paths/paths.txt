@@ -1,5 +1,5 @@
 // filepath: /Users/gregpaskal/GoogleDrive/Documents/Creative/BrandKit/BrandKit-mAi-MissionWares/.missionwares/AiAssist/output/paths/paths.txt
-Tree generated on: August 25, 2025, 7:23:06 AM
+Tree generated on: August 25, 2025, 6:30:09 PM
 =================================================================================
 This file contains the paths of the project files.
 =================================================================================
@@ -9,6 +9,7 @@ BEGIN_PATHS_CONTENT
 ./LIVE-PREVIEW/current-colors.html
 ./LIVE-PREVIEW/current-typography.html
 ./LIVE-PREVIEW/index.html
+./LIVE-PREVIEW/typography-exploration.html
 ./mAi-METHODOLOGY/creative-liberation-principles.md
 ./mAi-METHODOLOGY/expression-opportunity-capture.md
 ./mAi-METHODOLOGY/methodology-discoveries.md
