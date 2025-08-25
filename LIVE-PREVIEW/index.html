@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MissionWares Brand Laboratory - Live Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +15,7 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -37,14 +40,18 @@
         }
         
         .header h1 {
-            font-size: 2.5em;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 3em;
             margin-bottom: 10px;
             font-weight: 300;
+            letter-spacing: -0.02em;
         }
         
         .header p {
-            font-size: 1.2em;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.3em;
             opacity: 0.9;
+            font-weight: 400;
         }
         
         .content {
@@ -56,11 +63,13 @@
         }
         
         .section h2 {
-            font-size: 1.8em;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 2em;
             margin-bottom: 20px;
             color: #4a5568;
             border-left: 4px solid #667eea;
             padding-left: 15px;
+            font-weight: 500;
         }
         
         .color-palette {
@@ -83,10 +92,12 @@
         }
         
         .color-info {
+            font-family: 'Source Sans 3', sans-serif;
             background: rgba(0,0,0,0.2);
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 0.9em;
+            font-weight: 500;
         }
         
         .brand-pillars {
@@ -103,8 +114,18 @@
         }
         
         .pillar h3 {
+            font-family: 'Source Sans 3', sans-serif;
             color: #4a5568;
             margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        
+        .pillar p {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 400;
+            color: #718096;
+            line-height: 1.5;
         }
         
         .status-badge {
@@ -118,6 +139,51 @@
             margin-bottom: 15px;
         }
         
+        .typography-showcase {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #059669;
+        }
+        
+        .typography-showcase h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            color: #059669;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 1.4em;
+        }
+        
+        .type-sample {
+            margin: 15px 0;
+        }
+        
+        .type-display {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 2.5em;
+            font-weight: 300;
+            color: #1B4B73;
+            margin: 10px 0;
+            line-height: 1.1;
+        }
+        
+        .type-heading {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #2d3748;
+            margin: 10px 0;
+        }
+        
+        .type-body {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
         .iteration-info {
             background: #edf2f7;
             padding: 20px;
@@ -127,8 +193,16 @@
         }
         
         .iteration-info h3 {
+            font-family: 'Source Sans 3', sans-serif;
             color: #2d3748;
             margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .iteration-info p {
+            font-family: 'Source Sans 3', sans-serif;
+            margin-bottom: 5px;
+            font-weight: 400;
         }
         
         .nav-links {
@@ -139,9 +213,10 @@
         }
         
         .nav-link {
+            font-family: 'Source Sans 3', sans-serif;
             background: #4299e1;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
@@ -150,6 +225,28 @@
         
         .nav-link:hover {
             background: #3182ce;
+        }
+        
+        .next-exploration {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .next-exploration h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .next-exploration p {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 400;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -164,6 +261,15 @@
             <div class="section">
                 <span class="status-badge">Active Expression</span>
                 <h2>Current Brand Territory</h2>
+                
+                <div class="typography-showcase">
+                    <h3>✓ Typography Selected: Source Sans 3</h3>
+                    <div class="type-sample">
+                        <div class="type-display">Friendly Technical Excellence</div>
+                        <div class="type-heading">Empowering Lifelong Missions</div>
+                        <div class="type-body">Source Sans 3 bridges professional capability with human warmth, making complex innovation approachable and collaborative.</div>
+                    </div>
+                </div>
                 
                 <div class="color-palette">
                     <div class="color-swatch" style="background: linear-gradient(135deg, #1B4B73 0%, #2563eb 100%);">
@@ -183,32 +289,39 @@
                 <div class="brand-pillars">
                     <div class="pillar">
                         <h3>Enablement</h3>
-                        <p>Tools that unlock human potential and mission fulfillment</p>
+                        <p>Tools that unlock human potential and mission fulfillment through friendly technical excellence</p>
                     </div>
                     <div class="pillar">
                         <h3>Clarity</h3>
-                        <p>Cutting through complexity to reveal purposeful action</p>
+                        <p>Cutting through complexity to reveal purposeful action with approachable communication</p>
                     </div>
                     <div class="pillar">
                         <h3>Growth</h3>
-                        <p>Supporting continuous evolution and learning</p>
+                        <p>Supporting continuous evolution and learning through collaborative innovation</p>
                     </div>
                     <div class="pillar">
                         <h3>Purpose</h3>
-                        <p>Every solution serves a meaningful mission</p>
+                        <p>Every solution serves a meaningful mission with human-centered design</p>
                     </div>
                 </div>
             </div>
             
+            <div class="next-exploration">
+                <h3>Next: Logo Territory</h3>
+                <p>Exploring visual marks that complement Source Sans 3's friendly technical personality</p>
+            </div>
+            
             <div class="iteration-info">
                 <h3>mAi Methodology Status</h3>
-                <p><strong>Current Exploration:</strong> Color psychology for mission-driven technology brands</p>
-                <p><strong>Hypothesis:</strong> Blend trustworthy blues with growth-oriented greens and innovation purples</p>
-                <p><strong>Next Iteration:</strong> Typography exploration and logo concept development</p>
-                <p><strong>Last Updated:</strong> August 25, 2025 15:00 CDT</p>
+                <p><strong>Completed:</strong> Color psychology exploration + Typography selection (Source Sans 3)</p>
+                <p><strong>Current Exploration:</strong> Logo concepts that embody mission-enabling innovation</p>
+                <p><strong>Hypothesis:</strong> Geometric but warm symbols that match Source Sans 3's approachable clarity</p>
+                <p><strong>Next Iteration:</strong> Visual mark development with typography integration</p>
+                <p><strong>Last Updated:</strong> August 25, 2025 15:45 CDT</p>
             </div>
             
             <div class="nav-links">
+                <a href="typography-exploration.html" class="nav-link">Typography Exploration</a>
                 <a href="../EXPRESSION-SESSIONS/" class="nav-link">View All Sessions</a>
                 <a href="../mAi-METHODOLOGY/" class="nav-link">mAi Methodology</a>
                 <a href="../COOLING-VAULT/" class="nav-link">Cooling Vault</a>
